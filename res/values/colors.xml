@@ -1,0 +1,9 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="color_line">#cbcbcb</color>
+    <color name="true_green">#40622f</color>
+    <color name="nocolor">#11000000</color>
+    <color name="light_dark">#323232</color>
+
+</resources>

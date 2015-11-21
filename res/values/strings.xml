@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diary</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- font -->
+    <!-- <string name="font_BebasNeue">fonts/Bebas.ttf</string> -->
+    <string name="font_BebasNeue">fonts/BebasNeueWebfont.ttf</string>
+    <!-- <string name="font_BebasNeue">fonts/BebasNeue.otf</string> -->
+    <string name="font_CenturyGothic">fonts/CenturyGothic.ttf</string>
+    <string name="font_RobotoRegular">fonts/RobotoRegular.ttf</string>
+    <string name="font_Angelina">fonts/angelina.ttf</string>
+    <string name="font_DroidSans">fonts/DroidSans.ttf</string>
+
+</resources>
