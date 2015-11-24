@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/textView"
+    style="@style/diary_content"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:paddingLeft="0dp"
+    android:padding="3dp"
+    android:textSize="12sp"
     android:background="@drawable/diary_item_bg"
     android:gravity="top|center"
     android:orientation="vertical" />

@@ -6,13 +6,18 @@
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
     </style>
 
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#33B5E5</item>
+    </style>
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
@@ -62,8 +67,6 @@
     <style name="diary_content" parent="@style/style_diary_text">
         <item name="android:minLines">3</item>
         <item name="android:textSize">@dimen/text_20sp</item>
-        <item name="android:focusable">true</item>
-        <item name="android:focusableInTouchMode">true</item>
         <item name="android:fadingEdge">vertical</item>
         <item name="android:contentDescription">@string/font_CenturyGothic</item>
         <item name="android:layout_marginTop">@dimen/_size_10dip</item>
