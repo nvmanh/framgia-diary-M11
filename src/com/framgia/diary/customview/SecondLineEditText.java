@@ -17,6 +17,11 @@ import android.widget.EditText;
 public class SecondLineEditText extends EditText {
     private Bitmap bitmap;
     private boolean editable;
+    private float padLeft = 0;
+    private float padTop = 0;
+    private Resources resources;
+    private Rect mRect;
+    private Paint mPaint;
 
     public SecondLineEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -32,9 +37,6 @@ public class SecondLineEditText extends EditText {
         super(context, attrs);
         initData(context);
     }
-    private float padLeft = 0;
-    private float padTop = 0;
-    private Resources resources;
 
     private void initData(Context context) {
         mRect = new Rect();
@@ -46,8 +48,6 @@ public class SecondLineEditText extends EditText {
         padLeft = resources.getDimension(R.dimen.size_30dip);
         padTop = resources.getDimension(R.dimen.size_3dip);
     }
-    private Rect mRect;
-    private Paint mPaint;
 
     @Override
     protected void onDraw(Canvas canvas) {

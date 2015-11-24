@@ -7,6 +7,7 @@ import com.framgia.diary.model.Diary;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -36,6 +37,8 @@ public class MainActivity extends AbsActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.i("MainActivity.onCreate(...).new OnItemClickListener() {...}",
+                    "onItemClick: -----> dsds");
                 Diary diary = (Diary) parent.getAdapter().getItem(position);
                 onActionAddOrViewDiary(diary);
             }
@@ -69,7 +72,7 @@ public class MainActivity extends AbsActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void onActionAddOrViewDiary(Diary diary) {
+    public void onActionAddOrViewDiary(Diary diary) {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("isViewMode", diary != null);
         Bundle bundle = new Bundle();
